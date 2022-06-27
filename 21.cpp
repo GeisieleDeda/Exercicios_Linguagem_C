@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <locale.h>
+
 int main()
 {
+	setlocale(LC_ALL, "Portuguese");
 	float altura, peso;
 	char sexo;
 	printf("Informe a sexo (M/F):\n");
@@ -18,8 +21,8 @@ int main()
 	{
 		peso = (72.7*altura) - 58;
 	}
-	printf("O sexo e: %c\n", sexo);
-	printf("A altura e: %.2f\n", altura);
-	printf("O peso ideal e: %.2f\n", peso);
+	printf("O sexo é: %c\n", sexo);
+	printf("A altura é: %.2f\n", altura);
+	printf("O peso ideal é: %.2f\n", peso);
 	return(0);
 }

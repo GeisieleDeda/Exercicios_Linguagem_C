@@ -7,6 +7,6 @@ int main()
 	printf("Informe seu nome:");
 	scanf("\n %s", &name);
 	
-	printf("\n Bem-vinda à disciplina de Algoritmos e lógica de Programação II, %s", name);
+	printf("\n Bem-vinda a disciplina de Algoritmos e logica de Programacao II, %s", name);
 	return (0);
 }

@@ -3,7 +3,7 @@
 int main()
 {
 	float deposito, taxa, rendimento, total;
-	printf("\n Informe o valor do depósito:");
+	printf("\n Informe o valor do deposito:");
 	scanf("%f", &deposito);
 	printf("\n Informe a taxa de juros:");
 	scanf("%f", &taxa);

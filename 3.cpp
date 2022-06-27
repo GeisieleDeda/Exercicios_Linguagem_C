@@ -10,7 +10,7 @@ int main()
 	scanf ("%d", &idade);
 	printf ("Digite a altura:");
 	scanf ("%f", &altura);
-	ano = 2012 - idade;
+	ano = 2022 - idade;
 	printf ("\nO nome e: %s", nome);
 	printf ("\nA altura e: %.2f", altura);
 	printf ("\nA idade e: %d", idade);

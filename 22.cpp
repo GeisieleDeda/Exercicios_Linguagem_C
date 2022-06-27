@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <locale.h>
+
 int main()
 {
+	setlocale(LC_ALL, "Portuguese");
 	int op;
 	float total;
 	
@@ -19,7 +22,7 @@ int main()
 		case 3: total = total +545;
 		break;
 	}
-	printf("1 - cha 2 - suco 3 - refri\n");
+	printf("1 - chá 2 - suco 3 - refrigerante\n");
 	printf("informe a bebida: \n");
 	scanf("%d", &op);
 	switch (op)
@@ -31,6 +34,6 @@ int main()
 		case 3: total = total +90;
 		break;
 	}
-	printf("o total de caloria e: %.2f \n", total);
+	printf("O total de caloria é: %.2f \n", total);
 	return (0);
 }

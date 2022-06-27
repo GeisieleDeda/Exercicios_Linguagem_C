@@ -1,21 +1,23 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <locale.h>
 
 int main(){
+	setlocale(LC_ALL, "Portuguese");
 	int quadrado, num;
 	float raiz;
-	printf(" Digite o numero:");
+	printf(" Digite o número:");
 	scanf("%d", &num);
 	if (num % 2 == 0){
 		raiz = sqrt (num);
-		printf("\nO numero e par.");
-		printf("\nA raiz quadrada e: %.3f", raiz);
+		printf("\nO número é par.");
+		printf("\nA raiz quadrada é: %.3f", raiz);
 	}
 	else{
 		quadrado = num *num;
-		printf("\nO numero e impar.");
-		printf("\nO numero quadrado e: %d", quadrado);
+		printf("\nO número é impar.");
+		printf("\nO número quadrado é: %d", quadrado);
 	}
 	return (0);
 }
